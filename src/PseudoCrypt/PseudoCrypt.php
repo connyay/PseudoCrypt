@@ -1,4 +1,4 @@
-<?php namespace Crypt;
+<?php namespace PseudoCrypt;
  
 class PseudoCrypt {
  
