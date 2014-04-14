@@ -58,7 +58,7 @@ class PseudoCrypt {
         return $int;
     }
  
-    public static function unhash($hash, $len = 5) {
+    public static function unhash($hash) {
         $len = strlen($hash);
         $ceil = bcpow(62, $len);
         $mmiprimes = array_values(self::$golden_primes);
