@@ -32,7 +32,7 @@ class PseudoCrypt {
  
     public static function base62($int) {
         $key = "";
-        while(bccomp($int, 0) > 0) {
+        while(bccomp($int-1, 0) > 0) {
             $mod = bcmod($int, 62);
             $key .= chr(self::$chars62[$mod]);
             $int = bcdiv($int, 62);
